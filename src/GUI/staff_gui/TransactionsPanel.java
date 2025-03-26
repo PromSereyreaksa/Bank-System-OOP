@@ -160,7 +160,6 @@ public class TransactionsPanel extends JPanel {
     private void filterTransactionData(String searchTerm) {
         // Clear existing data
         tableModel.setRowCount(0);
-        
         // Get all transactions from database
         List<Transaction> transactions = transactionDAO.getAllTransactions();
         
